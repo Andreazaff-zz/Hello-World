@@ -1,27 +1,24 @@
-class Calcolatrice
-{
-int y = 0;
-int imposta(int x)
-{
-y = x;
-return y;
-}
+class Calcolatrice {
+		int y = 0;
 
-int z = 0;
-int somma(int x)
-{
-    z = x + y;
-    return z;
-}
+		int imposta(int x) {
+			y = x;
+			return y;
+		}
 
-int moltiplica(int x)
-{
-    int z = x * z;
-    return z;
-}
+		int z = 0;
 
-void stampa()
-{
-    System.out.println(z);
-}
-}
+		int somma(int x) {
+			z = x + y;
+			return z;
+		}
+
+		int moltiplica(int x) {
+			int z = x * z;
+			return z;
+		}
+
+		void stampa() {
+			System.out.println(z);
+		}
+	}
