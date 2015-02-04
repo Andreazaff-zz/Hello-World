@@ -1,0 +1,99 @@
+public class Usa {
+
+	public static void main(String[] args) {
+
+		String nome = "Andrea";
+		String cognome = "Zaffignani";
+		short giorno = 05;
+		short mese = 07;
+		short anno = 1994;
+		int altezza = 181;
+		double peso = 65.5;
+
+		Persona p = new Persona();
+		p.setNome(nome);
+		p.setCognome(cognome);
+		p.setGiorno(giorno);
+		p.setMese(mese);
+		p.setAnno(anno);
+		p.setAltezza(altezza);
+		p.setPeso(peso);
+		p.stampa();
+
+	}
+
+}
+
+
+public class Persona {
+
+	String nome;
+	String cognome;
+	short giorno;
+	short mese;
+	short anno;
+	int altezza;
+	double peso;
+
+	void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	void setCognome(String cognome) {
+		this.cognome = cognome;
+	}
+
+	void setGiorno(short giorno) {
+		this.giorno = giorno;
+	}
+
+	void setMese(short mese) {
+		this.mese = mese;
+	}
+
+	void setAnno(short anno) {
+		this.anno = anno;
+	}
+
+	void setAltezza(int altezza) {
+		this.altezza = altezza;
+	}
+
+	void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	String getNome() {
+		return nome;
+	}
+
+	String getCognome() {
+		return cognome;
+	}
+
+	short getGiorno() {
+		return giorno;
+	}
+
+	short getMese() {
+		return mese;
+	}
+
+	short getAnno() {
+		return anno;
+	}
+
+	int getAltezza() {
+		return altezza;
+	}
+
+	double getPeso() {
+		return peso;
+	}
+
+	void stampa() {
+		System.out
+				.printf("Un Ragazzo di nome %s e di cognome %s è nato il %d/%d/%d, è alto %d cm, e pesa ben %.2f kg.\n",
+						nome, cognome, giorno, mese, anno, altezza, peso);
+	}
+}
